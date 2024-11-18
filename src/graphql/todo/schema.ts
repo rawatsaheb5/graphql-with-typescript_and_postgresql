@@ -17,6 +17,9 @@ const todoSchema = `#graphql
         getAllTodos: [Todo]
     }
 
+    type Mutation{
+        createTodo(title:String, userId:String):Todo
+    }
 
 `
 export default todoSchema;

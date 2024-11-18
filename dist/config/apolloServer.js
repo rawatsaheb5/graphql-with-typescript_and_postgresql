@@ -1,8 +1,8 @@
 import { ApolloServer } from "@apollo/server";
-import todoSchema from "../graphql/todo/schema.js";
-import todoResolver from "../graphql/todo/resolver.js";
+import userSchema from "../graphql/user/userSchema.js";
+import userResolver from "../graphql/user/userResolver.js";
 const apolloServer = new ApolloServer({
-    typeDefs: todoSchema,
-    resolvers: todoResolver
+    typeDefs: userSchema,
+    resolvers: userResolver
 });
 export default apolloServer;
