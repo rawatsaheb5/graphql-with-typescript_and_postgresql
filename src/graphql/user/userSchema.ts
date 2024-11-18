@@ -10,12 +10,12 @@ const userSchema = `#graphql
         updated_at: Date    
     }
 
-    type Query {
-        _placeholder: String
+    type Query{
+        getUser(id:String): User
     }
 
     type Mutation {
         createUser(name: String, email: String, password: String): User
     }
 `;
-export default userSchema
+export default userSchema;
